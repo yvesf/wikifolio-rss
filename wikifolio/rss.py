@@ -11,11 +11,11 @@ def dump(cert, comments):
     :type cert: model.Certificate
     :type comments: list[model.Comment]
     """
-    title = "Kommentare zu {.name} / {.isin}".format(cert, cert)
+    title = "{.name} / {.isin}".format(cert, cert)
     items = []
     for comment in comments:
         items.append(rss20.item(
-                rss20.title(title),
+                rss20.title("Kommentar " + title),
                 rss20.author(comment.author),
                 rss20.pubDate(time.strftime("%a, %d %b %Y %T %z",
                                             comment.pubDate)),
