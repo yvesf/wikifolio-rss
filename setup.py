@@ -8,5 +8,5 @@ setup(name='wikifolio-rss',
       author_email='yvesf+wikifolio@xapek.org',
       url='https://www.xapek.org/git/yvesf/wikifolio-rss',
       packages=['wikifolio'],
-      scripts=['wikifolio-rss'],
+      scripts=['wikifolio-rss', 'wikifolio-plot-trades'],
       install_requires=['ll-xist'])
