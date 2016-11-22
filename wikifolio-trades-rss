@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import sys
+import logging
+import wikifolio.rss
+
+logging.basicConfig(level=logging.INFO)
+
+if len(sys.argv) == 2:
+    name = sys.argv[1]
+    zertifikat_id = wikifolio.get_id_from_name(name)
+    trades = wikifolio.get_trades(zertifikat_id)
+    print(wikifolio.rss.dump_trades(zertifikat_id, trades))

@@ -1,10 +1,16 @@
 # Usage
 
-get the name 'dach-trading-invest' from web-url
+- use python 3.5+ (typing)
+- take a name like 'dach-trading-invest' from the web page url
 
 ```
-# touch ./dach-trading-invest.rss.xml
-# wikifolio-rss ./dach-trading-invest.rss.xml
+# wikifolio-comments-rss dach-trading-invest > dach-trading-invest.comments.rss.xml
+# wikifolio-trades-rss dach-trading-invest > dach-trading-invest.trades.rss.xml
 ```
 
-The rss feed of comments is written into that file.
+
+# Note
+
+The source code provided here is not affiliated with wikifolio.com.
+wikifolio is most likely a registered brand and owned by somebody else.
+No warranty, use at your own risk.
